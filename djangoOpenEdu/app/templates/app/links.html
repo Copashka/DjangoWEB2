@@ -1,0 +1,22 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% load staticfiles %}
+
+
+<head>
+    <title>Ссылки</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="div-links-a">
+        <p><a href="https://www.gordonramsayrestaurants.com/" target="_blank"> <img src="{% static 'app/content/gordon.svg' %}" alt="Logo 1" /> - Gordon Ramsay</p></a>
+        <p><a href="https://www.foodandwine.com/news" target="_blank"> <img src="{% static 'app/content/foodAndWine.svg' %}" alt="Logo 1" /> - Food and Wine news</p></a>
+        <p><a href="https://www.nusr-et.com.tr/" target="_blank"> <img src="{% static 'app/content/nasret.svg' %}" alt="Logo 1" /> - Nusr-Et Steakhouse</p></a>
+    </div>
+</body>
+
+
+{% endblock %}
